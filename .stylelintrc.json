@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "stylelint-config-strict-scss",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-use-variable",
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "unit-blacklist": ["px"],
+    "at-rule-no-unknown": null,
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true,
+      "empty-line-between-groups": false
+    }],
+    "order/order": [
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::(before|after)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      },
+      {
+        "type": "rule",
+        "selector": "^."
+      }
+    ],
+    "sh-waqar/declaration-use-variable": [
+      [
+        "/color/",
+        "border",
+        "background",
+        "box-shadow"
+      ], { 
+        "ignoreValues": [
+          "transparent", 
+          "inherit",
+          "initial"
+        ]
+      }
+    ]
+  }
+}

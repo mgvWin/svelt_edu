@@ -1,0 +1,9 @@
+{
+  "eslint.validate": [
+    "javascript",
+    {
+      "language": "svelte",
+      "autoFix": false,
+    }
+  ],
+}

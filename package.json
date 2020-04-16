@@ -1,0 +1,56 @@
+{
+  "name": "svelte_edc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./config/webpack.config.dev.js",
+    "format": "prettier --write \"{,!(node_modules|dist)/**/}*.{js,jsx}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.0.7",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-safe-parser": "^4.0.1",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^0.7.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
+    "stylelint": "^13.3.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-strict-scss": "^0.5.0",
+    "stylelint-declaration-use-variable": "^1.7.2",
+    "stylelint-order": "^4.0.0",
+    "svelte": "^3.20.1",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^3.3.0",
+    "svelte-routing": "^1.4.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": []
+    }
+  }
+}
