@@ -1,6 +1,9 @@
 <script>
-  import { Button } from "@Components";
+  import Button from "@Components/Button/Button.svelte";
+  import Row from "@Components/Row/Row.svelte";
 </script>
 
-<div>Home</div>
-<Button>ddd</Button>
+<Row>
+  <div>Home</div>
+  <Button>ddd</Button>
+</Row>

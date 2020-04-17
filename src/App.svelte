@@ -1,7 +1,6 @@
 <script>
   import { Router, Route } from "svelte-routing";
-
-  import { Home } from "@Pages";
+  import Home from "@Pages/Home/Home.svelte";
   
   export let baseUrl = "/";
 </script>

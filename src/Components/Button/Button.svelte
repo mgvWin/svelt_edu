@@ -1,18 +1,11 @@
 <script>
-  export let 
-    click,
-    title,
-    type = 'button',
-    disabled;
+  export let click;
 </script>
 
-<style src="./Button.scss"></style>
+<style src="./Button.scss" global></style>
 
 <button 
   on:click={click}
-  {title} 
-  {type} 
-  {disabled}
   {...$$restProps}>
   <slot />
 </button>

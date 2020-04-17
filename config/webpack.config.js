@@ -8,7 +8,7 @@ const postCssConfig = require('./post-css.config')
 module.exports = {
 	output: {
 		path: helper.rootPath('dist'),
-		filename: '.bundle.js',
+		filename: '[name].js',
 		chunkFilename: '[name].[id].js',
 	},
 	entry: {
@@ -17,8 +17,8 @@ module.exports = {
 	resolve: {
 		alias: {
 			svelte: helper.rootPath('node_modules', 'svelte'),
-			'@Components': helper.rootPath('src', 'Components', 'Components.svelte'),
-			'@Pages': helper.rootPath('src', 'Pages', 'Pages.svelte')
+			'@Components': helper.rootPath('src', 'Components'),
+			'@Pages': helper.rootPath('src', 'Pages')
 		},
 		extensions: ['.mjs', '.js', '.svelte'],
 		mainFields: ['svelte', 'browser', 'module', 'main'],
